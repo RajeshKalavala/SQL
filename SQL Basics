@@ -1,0 +1,41 @@
+https://sqliteonline.com/
+
+create TABLE students_details ( rollno Integer  , name varchar, gender varchar, present varchar ); 
+
+
+
+DROP TABLE students;
+
+
+
+insert into students_details(rollno,name,gender,present) values (103, "Nirmala", "female", "Yes"); 
+
+insert into students_details(rollno,name,gender,present) values (104, "Bharath", "male", "No"); 
+
+insert into students_details(rollno,name,gender,present) values (105, "Sharath", "male", "Yes"); 
+
+insert into students_details(rollno,name,gender,present) values (106, "Varun", "male", "No"); 
+
+insert into students_details(rollno,name,gender,present) values (107, "Sandeep", "male", "Yes");
+
+
+
+
+
+select * from students_details;
+
+
+
+select name, rollno from students_details;
+
+
+
+select * from students_details where present = "No";
+
+
+
+select * from students_details where gender = "male" and present = "No" ;
+
+
+
+select * from students_details where gender = "male" OR present = "No" 
